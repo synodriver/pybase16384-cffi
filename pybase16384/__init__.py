@@ -1,8 +1,8 @@
 """
 Copyright (c) 2008-2021 synodriver <synodriver@gmail.com>
 """
-from typing import IO
 from io import BytesIO
+from typing import IO
 
 from pybase16384._core import ffi, lib
 
