@@ -6,7 +6,7 @@ from typing import IO
 
 from pybase16384._core import ffi, lib
 
-__version__ = "0.1.0.dev1"
+__version__ = "0.1.0"
 
 encode_len = lib.encode_len
 decode_len = lib.decode_len
