@@ -50,11 +50,12 @@ source = """
 #endif
 """
 
-with open(f"./base16384/base14{CPUBIT}.c", "r", encoding="utf-8") as f:
-    source += f.read()
-
 ffibuilder.set_source(
-    "pybase16384._core", source, include_dirs=["./base16384"], define_macros=macro_base
+    "pybase16384._core",
+    source,
+    sources=[f"./base16384/base14{CPUBIT}.c"],
+    include_dirs=["./base16384"],
+    define_macros=macro_base,
 )
 
 if __name__ == "__main__":
